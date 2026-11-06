@@ -2,6 +2,7 @@ Crie uma landing page para a Jhuann Imports, loja de iPhones novos e seminovos e
 
 OBJETIVO
 Levar o visitante ao WhatsApp da loja com uma mensagem pronta e completa sobre o aparelho atual dele e o que ele quer comprar. Ação principal: simular a troca e tocar em "Enviar no WhatsApp". Ações secundárias: consultar iPhones novos lacrados e pedir as opções de seminovos disponíveis no dia.
+O site serve para apresentar tudo o que a loja oferece (novos, seminovos, troca, garantia, pagamento) e facilitar o atendimento. NENHUM valor aparece no site: o valor de avaliação do aparelho do cliente e os preços dos novos e seminovos mudam sempre, por isso são informados apenas no WhatsApp.
 
 PÚBLICO
 Pessoas de Rosana-SP e região que querem:
@@ -14,7 +15,7 @@ ESTRUTURA (nesta ordem)
 1. Topo fixo (translúcido ao rolar): logo, menu (Simular troca, Novos, Seminovos, Garantia, Dúvidas) e botão "WhatsApp".
 2. Hero
    - Título: "Seu próximo iPhone começa com o que você já tem."
-   - Subtítulo: "Escolha seu modelo, a cor, o armazenamento e a saúde da bateria. Em menos de 1 minuto sua proposta de troca chega pronta no nosso WhatsApp."
+   - Subtítulo: "Escolha seu modelo, a cor, o armazenamento e a saúde da bateria. Em menos de 1 minuto sua mensagem chega pronta no nosso WhatsApp e a gente responde com os valores do dia."
    - Botões: "Simular minha troca" (rola até o simulador) e "Ver iPhones novos".
    - Selos: "+1,5 mil entregas realizadas presencialmente", "Cartão em até 18x", "1 ano de garantia Apple nos novos".
    - Visual: iPhone 18 Pro Max grande, flutuando com animação suave e alternando entre suas cores.
@@ -23,10 +24,10 @@ ESTRUTURA (nesta ordem)
 5. iPhones novos lacrados
    - Cards para iPhone 18 Pro Max e 18 Pro (selo "Lançamento"), iPhone 17 Pro Max, 17 Pro, iPhone Air e iPhone 17.
    - Cada card tem bolinhas de cor; ao tocar numa cor, a imagem do iPhone muda para ela. Também mostra as opções de armazenamento.
-   - Sem preços. Botão "Consultar no WhatsApp", que envia uma mensagem pronta com o modelo e a cor escolhidos.
+   - Sem preços (mudam com frequência e são passados só no WhatsApp). Botão "Consultar valor no WhatsApp", que envia uma mensagem pronta com o modelo, a cor e o armazenamento escolhidos.
 6. Seminovos
    - Título: "Estoque que muda todo dia. Atendimento que acompanha."
-   - Texto explicando que os seminovos entram e saem rápido, então a vitrine é ao vivo no WhatsApp, com fotos reais e a saúde da bateria.
+   - Texto explicando que os seminovos entram e saem rápido, então a vitrine é ao vivo no WhatsApp, com fotos reais, saúde da bateria e valores do dia.
    - Checklist em 4 cards: Procedência verificada (IMEI e iCloud livres), Teste completo (Face ID, câmeras, tela, áudio), Bateria informada, Garantia de 1 mês.
    - Botão verde "Ver seminovos disponíveis".
 7. Como funciona (4 passos): 1. Simule → 2. Receba a proposta no WhatsApp → 3. Avaliação rápida do seu aparelho → 4. Saia com seu iPhone novo.
@@ -34,11 +35,10 @@ ESTRUTURA (nesta ordem)
    - Garantia: "Na Jhuann Imports, cada iPhone novo que você adquire está coberto pela garantia de um ano em qualquer loja Apple. Para os iPhones seminovos, oferecemos garantia de um mês a partir da data da compra."
    - Pagamento: "Cartão de crédito em até 18x · PIX · Transferência bancária".
 9. Sobre
-   - Foto do responsável pela loja (enviada) ao lado do texto: "Experiência única em adquirir seu novo produto Apple. Mais de 1,5 mil entregas realizadas presencialmente em Rosana-SP e região."
-   - Nome do responsável: [NOME].
+   - Foto do Jhuann, dono da loja (enviada), ao lado do texto: "Eu sou o Jhuann. Minha missão é oferecer uma experiência única em adquirir seu novo produto Apple. Já são mais de 1,5 mil entregas realizadas presencialmente em Rosana-SP e região."
 10. Instagram: faixa com chamada "Ofertas diárias e novidades no Instagram" e botão para instagram.com/jhuann.imports.
 11. Perguntas frequentes (acordeão):
-   - O valor da simulação é o final?
+   - Quanto vale meu aparelho na troca? (resposta: a avaliação e todos os valores são passados no WhatsApp, porque mudam com frequência)
    - Aceitam Android na troca?
    - Como vejo a saúde da bateria?
    - Formas de pagamento
@@ -108,7 +108,7 @@ FLUXO C (só comprar)
 
 Etapa 6, "O que você quer levar?":
 - "iPhone novo lacrado": escolher o modelo (18 Pro Max, 18 Pro, 17 Pro Max, 17 Pro, Air, 17), a cor e o armazenamento. O palco mostra o iPhone desejado.
-- "Ver opções de seminovos": seleção múltipla de modelos de interesse e faixa de orçamento opcional (até R$ 3 mil, R$ 3–5 mil, R$ 5–8 mil, acima de R$ 8 mil). Aviso em destaque: "O estoque de seminovos muda todos os dias. Vamos te enviar as opções disponíveis agora pelo WhatsApp."
+- "Ver opções de seminovos": seleção múltipla de modelos de interesse (pode marcar "Estou aberto a sugestões"). Aviso em destaque: "O estoque de seminovos muda todos os dias. Vamos te enviar as opções disponíveis agora pelo WhatsApp."
 
 Etapa 7, "Seus dados":
 - nome, cidade e forma de pagamento preferida (PIX, Cartão em até 18x, Transferência).
@@ -119,7 +119,7 @@ Etapa 8, "Resumo":
 - Botão verde grande "Enviar no WhatsApp", que abre https://wa.me/5518981556782?text=(mensagem codificada).
 
 Exemplo da mensagem gerada:
-"Olá, Jhuann Imports! 👋 Vim pelo site e quero fazer um upgrade.
+"Olá, Jhuann! 👋 Vim pelo site e quero fazer um upgrade. Pode me passar os valores?
 📱 *Meu aparelho*: iPhone 15 Pro Max · Titânio-natural · 256 GB · Bateria 87% · Bom estado · Face ID ok · Tenho caixa
 🎯 *Quero*: iPhone 18 Pro Max novo · Azul · 512 GB
 💳 Pagamento: Cartão em até 18x
@@ -132,7 +132,7 @@ Cores dos modelos mais novos:
 - iPhone 17: Lavanda, Sálvia, Azul Névoa, Branco, Preto.
 - Demais modelos: usar as cores e armazenamentos oficiais da Apple de cada um.
 
-Não exibir valores de avaliação no simulador. O valor final é confirmado no WhatsApp após a conferência do aparelho.
+IMPORTANTE: o simulador NÃO calcula nem mostra nenhum valor. Ele só organiza as informações e monta a mensagem. A avaliação do aparelho do cliente e os preços dos novos e seminovos são informados pelo Jhuann no WhatsApp.
 
 Outros botões de WhatsApp (topo, seminovos, cards, flutuante): todos com mensagem inicial pronta, por exemplo "Olá! Vim pelo site e gostaria de atendimento."
 
@@ -143,5 +143,6 @@ REQUISITOS
 - Responsivo, com prioridade total para celular (o simulador precisa ser confortável de usar com o polegar).
 - Leve, rápido e com visual profissional.
 - Respeitar "reduzir movimento" do sistema.
-- Não inventar dados (telefone, preços, depoimentos): usar [placeholders] onde faltar informação.
+- Não exibir preços, valores de avaliação ou estimativas em nenhum lugar do site. Todo valor é tratado no WhatsApp.
+- Não inventar dados (telefone, depoimentos): usar [placeholders] onde faltar informação.
 - WhatsApp da loja: 5518981556782 ((18) 98155-6782).
