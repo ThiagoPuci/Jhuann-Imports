@@ -5,8 +5,8 @@ window.STORE = {
   name: "Jhuann Imports",
   instagram: "jhuann.imports",
   // Número no formato internacional, só dígitos: 55 + DDD + número
-  // TODO: substituir pelo WhatsApp real da loja (está no Linktree)
-  whatsapp: "5500000000000",
+  // WhatsApp da loja
+  whatsapp: "5518981556782",
   linktree: "https://linktr.ee/jhuanniphoness",
   city: "Rosana — SP",
   deliveries: "+1,5 mil",
